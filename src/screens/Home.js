@@ -2,6 +2,12 @@ import React from "react";
 import "../App.css";
 import {motion} from 'framer-motion'
 import {useHistory,Link} from 'react-router-dom'
+import instagram from '../images/instagram.png'
+import gmail from '../images/gmail.svg'
+import github from '../images/github1.svg'
+import playstore from '../images/playstore.svg'
+
+
 
 function Home() {
   const history=useHistory();
@@ -76,7 +82,7 @@ function Home() {
         <Link to={()=>{
                   window.open('https://www.instagram.com/nicky_rwt/', '_blank')
                 }}>
-        <img src={'https://image.flaticon.com/icons/png/512/174/174855.png'} height='30px' width='30px'
+        <img src={instagram} height='30px' width='30px'
         // style={{position:'absolute',right:'95vw',top:'5px'}}
         /></Link>
         </motion.div>
@@ -96,7 +102,7 @@ function Home() {
         <Link to={()=>{
                   window.open('mailto:rawatnitesh066@gmail.com', '_blank')
                 }}>
-        <img src={'https://www.flaticon.com/svg/vstatic/svg/732/732200.svg?token=exp=1613191346~hmac=9f46d3998db50675ec2a080b06c42040 '} height='30px' width='30px'
+        <img src={gmail} height='30px' width='30px'
         // style={{position:'absolute',right:'90vw',top:'5px'}}
         /></Link>
         </motion.div>
@@ -116,7 +122,7 @@ function Home() {
         <Link to={()=>{
                   window.open('https://github.com/niteshRawat070', '_blank')
                 }}>
-        <img src={'https://www.flaticon.com/svg/vstatic/svg/733/733609.svg?token=exp=1613191849~hmac=28185570eb05ae1474a78cb966570fd2 '} height='30px' width='30px'
+        <img src={github} height='30px' width='30px'
         // style={{position:'absolute',right:'90vw',top:'5px'}}
         /></Link>
         </motion.div>
@@ -136,7 +142,7 @@ function Home() {
         <Link to={()=>{
                   window.open('https://play.google.com/store/apps/developer?id=nickdeveloperX&hl=en_IN&gl=US', '_blank')
                 }}>
-        <img src={'https://www.flaticon.com/svg/vstatic/svg/300/300218.svg?token=exp=1614698120~hmac=e10e73efc70a3644c8342049cc11aeae '} height='30px' width='30px'
+        <img src={playstore} height='30px' width='30px'
         // style={{position:'absolute',right:'90vw',top:'5px'}}
         /></Link>
         </motion.div>
@@ -148,7 +154,7 @@ function Home() {
       <motion.p 
       initial={{
         x:'-100vw'
-      }}
+      }} 
       animate={{
         x:0
       }}
@@ -156,7 +162,7 @@ function Home() {
         duration:1,
         delay:0.25
       }}
-      style={{ color: "rgb(194, 194, 194)",fontWeight:'bold',textAlign:'center', fontSize: "1.8rem",fontStyle:'oblique' }}>
+      style={{ color: "rgb(194, 194, 194)",fontWeight:'bold',textAlign:'center', fontSize: "1.8rem",margin:'20px 10px',fontStyle:'oblique' }}>
         Hello, my name is Nitesh Rawat.
       </motion.p>
       <motion.p 
@@ -171,7 +177,7 @@ function Home() {
         delay:0.50,
         type:'spring'
       }}
-      style={{ color: "gray",textAlign:'center',margin:'0px 20vw',fontSize:'1.3rem',fontStyle:'oblique' }}>
+      style={{ color: "gray",textAlign:'center',margin:'0px 15vw',fontSize:'1.3rem',fontStyle:'oblique' }}>
         I am an <b>Web and Mobile</b> Application Developer. I'm a Computer Application graduate with a degree from Manav Rachna International University. Over the past 2 years, coding has developed into a passion of mine, specifically in Web and Mobile Development. 
       </motion.p>
       </div>
